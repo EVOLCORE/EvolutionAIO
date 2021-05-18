@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Pc\Downloads\Evolutionv2\EvolutionAIO.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{325DB737-4469-4CB6-891C-F17BB7B2B37D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>EvolutionAIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Colorful.Console">
+      <HintPath>lib\Colorful.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>lib\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Leaf.xNet">
+      <HintPath>lib\Leaf.xNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="OnProgramStart.cs" />
+    <Compile Include="API.cs" />
+    <Compile Include="Security.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="InfoManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Logo.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="RPC.cs" />
+    <Compile Include="Save.cs" />
+    <Compile Include="TaskCheck.cs" />
+    <Compile Include="Checkers\AliVM.cs" />
+    <Compile Include="Checkers\Amazon.cs" />
+    <Compile Include="Checkers\COD.cs" />
+    <Compile Include="Checkers\Discord.cs" />
+    <Compile Include="Checkers\DoorDash.cs" />
+    <Compile Include="Checkers\IPVanish.cs" />
+    <Compile Include="Checkers\NordVPN.cs" />
+    <Compile Include="Checkers\Instagram.cs" />
+    <Compile Include="Checkers\Crunchyroll.cs" />
+    <Compile Include="Checkers\Hulu.cs" />
+    <Compile Include="Checkers\Disney.cs" />
+    <Compile Include="Checkers\Patreon.cs" />
+    <Compile Include="Checkers\Pornhub.cs" />
+    <Compile Include="Checkers\Wish.cs" />
+    <Compile Include="Frwd.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
